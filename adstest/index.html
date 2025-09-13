@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Netlify 사이트 — 자동광고</title>
+  <meta name="description" content="Netlify 정적 사이트에서 Google AdSense 자동광고를 테스트합니다.">
+
+  <!-- ✅ AdSense 자동광고 전역 스니펫 (YOUR_AD_CLIENT_ID 교체) -->
+  <script async 
+    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3430803344030683" 
+    crossorigin="anonymous"></script>
+
+  <style>
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; margin:0; line-height:1.7; color:#111 }
+    header { padding:28px 20px; background:#f6f6f6; border-bottom:1px solid #e8e8e8 }
+    main { max-width:920px; margin:0 auto; padding:24px 20px }
+    footer { padding:20px; background:#fafafa; border-top:1px solid #e8e8e8; color:#666; font-size:14px }
+    .card { border:1px solid #e5e7eb; border-radius:14px; padding:18px; background:#fff; margin-bottom:20px }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Google AdSense 자동광고 테스트</h1>
+    <p>이 페이지는 <strong>자동광고</strong>만 사용합니다. 별도의 Slot ID는 필요하지 않습니다.</p>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>자동광고 동작 원리</h2>
+      <p>전역 스니펫에 <code>ca-pub-YOUR_AD_CLIENT_ID</code>만 교체하면 끝! 광고 위치는 Google이 자동 배치합니다.</p>
+    </section>
+
+    <section class="card">
+      <h2>참고 사항</h2>
+      <ul>
+        <li>광고 노출까지 몇 시간~며칠 걸릴 수 있음</li>
+        <li>루트 도메인에 ads.txt가 있어야 모든 서브도메인도 정상 처리됨</li>
+        <li>robots.txt, sitemap.xml을 함께 두면 SEO에 유리</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    © 2025 My Site — Netlify 배포
+  </footer>
+</body>
+</html>
